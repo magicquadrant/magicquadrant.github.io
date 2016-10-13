@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Getting Started with Vagrant and Windows 10</title>
+  <meta name="description" content="Installing VirtualBox 5 on Windows 10">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/vagrant/virtualbox/windows/2016/10/12/welcome-to-jekyll.html">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Vagrant and VirtualBox on Windows 10</a>
+
+    <nav class="site-nav">
+      <span class="menu-icon">
+        <svg viewBox="0 0 18 15" width="18px" height="15px">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </span>
+
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Getting Started with Vagrant and Windows 10</h1>
+    <p class="post-meta"><time datetime="2016-10-12T20:00:00-06:00" itemprop="datePublished">Oct 12, 2016</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="installing-virtualbox-5-on-windows-10">Installing VirtualBox 5 on Windows 10</h1>
+
+<p>Installing VirtualBox on Windows 10 is pretty straightforward.
+There are a number of editions of Windows 10. Two of the more common editions include:</p>
+<ul>
+  <li>Windows 10 Home</li>
+  <li>Windows 10 Pro / Windows 10 Enterprise</li>
+</ul>
+
+<p>With Windows 10 Pro, a <code class="highlighter-rouge">hypervisor</code> is built in and included with this edition of Windows. It is not included within Windows 10 Home.
+This hypervisor is referred to as <code class="highlighter-rouge">HyperV</code>.</p>
+
+<p>By default, with a standard installation of Windows 10 Pro, HyperV is not enabled. 
+HyperV can enabled/disabled via the Windows Features dialog.</p>
+
+<p>Only one hypervisor can be <strong>active</strong> at any given time within Windows. Its important that HyperV be <code class="highlighter-rouge">disabled</code> when working with Oracle VirtualBox.</p>
+
+<iframe width="560" height="420" src="http://www.youtube.com/embed/j69HzyRKe7M?fs=0"></iframe>
+
+<hr />
+
+<h1 id="creating-a-virtual-machine-with-virtualbox">Creating a virtual machine with VirtualBox</h1>
+
+<p>Here is a sample walkthru <em>manually</em> creating a linux virtual machine.
+<a href="https://alpinelinux.org/">Alpine Linux</a> is chosen simply for the small ISO size to minimize download time.</p>
+
+<iframe width="560" height="420" src="http://www.youtube.com/embed/d3uS1BboBso?fs=0"></iframe>
+
+<hr />
+
+<h1 id="installating-git-for-windows">Installating Git for Windows</h1>
+
+<iframe width="560" height="420" src="http://www.youtube.com/embed/XM_Jtoe4FDY?fs=0"></iframe>
+
+<hr />
+
+<h1 id="installing-vagrant-on-windows">Installing Vagrant on Windows</h1>
+
+<p><a href="https://www.vagrantup.com/">Vagrant</a> is a <code class="highlighter-rouge">automation</code> tool. Let’s repeat that, its an <strong>AUTOMATION TOOL</strong>.
+It is <em>NOT</em> linux. It is software written in the Ruby language which can aid in working with virtual machine environments, including HyperV or VirtualBox among many 
+other <a href="https://www.vagrantup.com/docs/providers/">providers</a></p>
+
+<iframe width="560" height="420" src="http://www.youtube.com/embed/XM_Jtoe4FDY?fs=0"></iframe>
+
+<hr />
+
+<h1 id="creating-a-virtual-machine-via-vagrant">Creating a virtual machine via Vagrant</h1>
+
+<p>Vagrant is a <code class="highlighter-rouge">automation</code> tool.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">vagrant init hashicorp/precise64</code></pre></figure>
+
+<iframe width="560" height="420" src="http://www.youtube.com/embed/UwjbZoRE48A?fs=0"></iframe>
+
+<hr />
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
